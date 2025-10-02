@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 import { FaUserCircle } from "react-icons/fa";
 
+// Use /public/grievx-logo.png or swap for your real logo
 export default function Navbar() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
@@ -20,8 +21,20 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white border-b border-gray-200 sticky top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-2 px-4 sm:px-6">
-        <div className="text-2xl font-bold text-purple-900 tracking-wide">GrievX</div>
+        {/* Logo and name */}
+        <div className="flex items-center gap-3">
+          <img
+            src="/logo.png"
+            alt="GrievX Logo"
+            className="h-12 w-12 object-contain"
+          />
+          <span className="text-2xl font-bold text-purple-900 tracking-wide select-none">GrievX</span>
+        </div>
+
         <div className="sm:flex items-center gap-3">
+          <NavLink to="/" className="mx-2 px-3 py-2 rounded-lg text-purple-700 font-medium hover:bg-purple-100">Home</NavLink>
+          <NavLink to="/faq" className="mx-2 px-3 py-2 rounded-lg text-purple-700 font-medium hover:bg-purple-100">FAQ</NavLink>
+          <NavLink to="/about" className="mx-2 px-3 py-2 rounded-lg text-purple-700 font-medium hover:bg-purple-100">About</NavLink>
           {user ? (
             <>
               {user.role === "admin" && (

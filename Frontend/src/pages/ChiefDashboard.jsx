@@ -7,33 +7,34 @@ const initialComplaints = [
     id: "C101",
     title: "Major pothole on 1st Street",
     department: "Roads",
-    createdAt: Date.now() - 8 * 24 * 60 * 60 * 1000, // 8 days ago
+    createdAt: Date.now() - 8 * 24 * 60 * 60 * 1000,
     status: "Pending"
   },
   {
     id: "C102",
     title: "Water supply issue at Block C",
     department: "Water",
-    createdAt: Date.now() - 3 * 24 * 60 * 60 * 1000, // 3 days ago
+    createdAt: Date.now() - 3 * 24 * 60 * 60 * 1000,
     status: "Resolved"
   },
   {
     id: "C103",
     title: "Street light malfunction",
     department: "Electricity",
-    createdAt: Date.now() - 12 * 24 * 60 * 60 * 1000, // 12 days ago
+    createdAt: Date.now() - 12 * 24 * 60 * 60 * 1000,
     status: "Pending"
   },
   {
     id: "C104",
     title: "Unsafe crossing near school",
     department: "Public Safety",
-    createdAt: Date.now() - 1 * 24 * 60 * 60 * 1000, // 1 day ago
+    createdAt: Date.now() - 1 * 24 * 60 * 60 * 1000,
     status: "Pending"
   }
 ];
 
 const CROSS_LIMIT_DAYS = 7;
+const HEATMAP_IMAGE_PATH = "/heatmap.png"; // change as needed
 
 function getDaysAgo(ts) {
   return Math.floor((Date.now() - ts) / (24 * 60 * 60 * 1000));
@@ -83,6 +84,18 @@ export default function ChiefDashboard() {
             <div className="text-xs text-gray-600">Unresolved {">"} {CROSS_LIMIT_DAYS} days</div>
           </div>
         </div>
+      </div>
+
+      {/* Heatmap Analytics */}
+      <div className="bg-white/85 rounded-xl shadow-lg p-6 mb-10">
+        <h3 className="text-lg font-bold text-purple-900 mb-4">Complaints Heatmap</h3>
+        <img
+  src="./heatmap.jpg"
+  alt="Complaints Heatmap"
+  className="mx-auto rounded shadow"
+  style={{ maxWidth: 420, height: '220px', objectFit: 'contain' }}
+  loading="lazy"
+/>
       </div>
 
       {/* Complaint Table */}

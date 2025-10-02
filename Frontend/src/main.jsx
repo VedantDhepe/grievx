@@ -15,6 +15,8 @@ import CitizenDashboard from "./pages/CitizenDashboard";
 // import StoreOwnerDashboard from "./pages/StoreOwnerDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute"
+import About from "./pages/About";
+import Faq from "./pages/Faq";
 import NotFound from "./pages/NotFound";
 const router = createBrowserRouter([
   {
@@ -40,6 +42,22 @@ const router = createBrowserRouter([
             <Register />
           </PublicRoute>
         ),
+      },
+      {
+        path : "about",
+        element:(
+          
+            <About/>
+        
+        )
+      },
+      {
+        path : 'faq',
+        element : (
+          
+            <Faq/>
+          
+        )
       },
 
       // Protected routes
