@@ -9,7 +9,7 @@ const initialComplaints = [
     category: "Road",
     location: "Ward 5, Near Park",
     duration: "3 days",
-    imageUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "road.png",
     status: "Pending"
   },
   {
@@ -18,7 +18,7 @@ const initialComplaints = [
     category: "Water",
     location: "Block B, Sector 2",
     duration: "1 week",
-    imageUrl: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "water.png",
     status: "Resolved"
   }
 ];

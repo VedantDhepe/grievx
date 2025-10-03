@@ -3,44 +3,44 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 // Fill these with your real data!
 const team = [
   {
+    name: "Jay Joshi",
+    role: "Project Lead",
+    email: "jayjoshi9923@gmail.com",
+    github: "https://github.com/JayJoshi9923",
+    linkedin: "https://www.linkedin.com/in/jay-joshi-ba778325b/",
+    photo: "JayPhoto.jpg", // Change to real photo URL
+  },
+  {
     name: "Vedant Dhepe",
-    role: "Project Lead, Full-stack Developer",
+    role: "Full Stack Developer",
     email: "vedantdhepe101@gmail.com",
     github: "https://github.com/VedantDhepe",
-    linkedin: "https://www.linkedin.com/in/vedant-dhepe-460985252/",
-    photo: "https://avatars.githubusercontent.com/u/91714690?v=4", // Change to real photo URL
+    linkedin: "https://linkedin.com/in/VedantDhepe",
+    photo: "VedantPhoto.jpg", // Replace as needed
   },
   {
-    name: "Member Two",
+    name: "Nishant Bayaskar",
+    role: "ML/DA Engineer",
+    email: "bayaskarnishant6@gmail.com",
+    github: "https://github.com/alpha31032005",
+    linkedin: "https://linkedin.com/in/nishant-bayaskar-ba1323262",
+    photo: "NishantPhoto.jpg",
+  },
+  {
+    name: "Bhumika Thakare",
     role: "Frontend Developer",
-    email: "member2@email.com",
-    github: "https://github.com/member2",
-    linkedin: "https://linkedin.com/in/member2",
-    photo: "https://randomuser.me/api/portraits/men/32.jpg", // Replace as needed
-  },
-  {
-    name: "Member Three",
-    role: "Backend Developer",
-    email: "member3@email.com",
-    github: "https://github.com/member3",
-    linkedin: "https://linkedin.com/in/member3",
-    photo: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Member Four",
-    role: "Database Specialist",
-    email: "member4@email.com",
+    email: "bhumikathakare@gmail.com",
     github: "https://github.com/member4",
     linkedin: "https://linkedin.com/in/member4",
-    photo: "https://randomuser.me/api/portraits/men/64.jpg",
+    photo: "https://avatars.githubusercontent.com/u/91714690?v=4",
   },
   {
-    name: "Member Five",
-    role: "UI/UX Designer",
+    name: "Madhura Bathe",
+    role: "AI/ML Engineer",
     email: "member5@email.com",
     github: "https://github.com/member5",
     linkedin: "https://linkedin.com/in/member5",
-    photo: "https://randomuser.me/api/portraits/women/68.jpg",
+    photo: "https://avatars.githubusercontent.com/u/91714690?v=4",
   },
 ];
 
